@@ -3,6 +3,7 @@
   --yellow: #F5C32C;
     --orange : #FCA61F;
     --black : #242D49;
+    --crimson: rgb(235, 72, 104);
     --gray : #788097;
     --blueCard : #DDF8FE;
     --purple: rgb(238 210 255);
@@ -15,4 +16,21 @@
     padding: 0.5rem 3.5rem;
     overflow: hidden;
     color: var(--black);    
+}
+
+.button{
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 26px;
+  background: linear-gradient(180deg, crimson, brown);
+  box-shadow: 0 20px 24px 3px  rgb(231, 171, 171);
+}
+
+.button:hover{
+  background: white;
+  cursor: pointer;
+  color: var(--crimson);
+  border: 1px solid var(--crimson);
 }
