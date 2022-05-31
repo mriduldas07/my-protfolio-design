@@ -1,7 +1,7 @@
 .services{
     padding: 0 3rem;
     display: flex;
-    height: 90vh;
+    height: 110vh;
     margin-bottom: 8rem;
     margin-top: 9rem;
 }
@@ -36,6 +36,15 @@
     margin-top: 1rem;
 }
 
+.s-blur1{
+    top: 15rem;
+    left: -14rem;
+}
+
+.s-blur2{
+    left: -5rem;
+    top: -7rem;
+}
 
 .cards{
     position: relative;
