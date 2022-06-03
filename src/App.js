@@ -8,6 +8,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Contact from "./Components/Contact/Contact";
 import { ToastContainer } from "react-toastify";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Portfolio></Portfolio>
       <Testimonials></Testimonials>
       <Contact></Contact>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
   );
