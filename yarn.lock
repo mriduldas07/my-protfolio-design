@@ -1133,6 +1133,11 @@
   dependencies:
     "postcss-value-parser" "^4.2.0"
 
+"@emailjs/browser@^3.6.2":
+  "integrity" "sha512-Swc8w+vwDX4XPy6tPegOFGSwHqNiEmEsIKbtAkqHo2WqnS0ORZUnnuZats2R3XqwfxNQD0F6RwnlVWHIMf6sCQ=="
+  "resolved" "https://registry.npmjs.org/@emailjs/browser/-/browser-3.6.2.tgz"
+  "version" "3.6.2"
+
 "@eslint/eslintrc@^1.2.1":
   "integrity" "sha512-bxvbYnBPN1Gibwyp6NrpnFzA3YtRL3BBAyEAFVIpNTm2Rn4Vy87GA5M4aSn3InRrlsbX5N0GW7XIx+U4SAEKdQ=="
   "resolved" "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.2.1.tgz"
@@ -2907,6 +2912,11 @@
     "strip-ansi" "^6.0.0"
     "wrap-ansi" "^7.0.0"
 
+"clsx@^1.1.1":
+  "integrity" "sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA=="
+  "resolved" "https://registry.npmjs.org/clsx/-/clsx-1.1.1.tgz"
+  "version" "1.1.1"
+
 "co@^4.6.0":
   "integrity" "sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ= sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ=="
   "resolved" "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
@@ -3679,6 +3689,11 @@
   "integrity" "sha512-lYxzcUCjWxxVug+A7UxBCUiVr13TCjfZFYJS9Lq1VpU/ErwV4a6zUQo9dfojuGpw/L/x9REGuBl6ICQPGgbs3g=="
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.139.tgz"
   "version" "1.4.139"
+
+"emailjs@^4.0.0":
+  "integrity" "sha512-t6LqDjGZnIkM+1ghsgazsaZbXnK7Yt+0Qjx6aCK3EGosenTC3w3aoO5wkWuDiBmdl2z9H/zCnTbKJPjTJripkg=="
+  "resolved" "https://registry.npmjs.org/emailjs/-/emailjs-4.0.0.tgz"
+  "version" "4.0.0"
 
 "emittery@^0.8.1":
   "integrity" "sha512-uDfvUjVrfGJJhymx/kz6prltenw1u7WrCg1oa94zYY8xxVpLLUu045LAT0dhDZdXG58/EpPL/5kA180fQ/qudg=="
@@ -7118,7 +7133,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@*", "react-dom@^17.0.2":
+"react-dom@*", "react-dom@^17.0.2", "react-dom@>=16":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -7202,7 +7217,14 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
-"react@*", "react@^17.0.2", "react@>= 16", "react@17.0.2":
+"react-toastify@^9.0.3":
+  "integrity" "sha512-0QZJk0SqYBxouRBGCFU3ymvjlwimRRhVH7SzqGRiVrQ001KSoUNbGKx9Yq42aoPv18n45yJzEFG82zqv3HnASg=="
+  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.0.3.tgz"
+  "version" "9.0.3"
+  dependencies:
+    "clsx" "^1.1.1"
+
+"react@*", "react@^17.0.2", "react@>= 16", "react@>=16", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -8288,7 +8310,7 @@
   dependencies:
     "is-typedarray" "^1.0.0"
 
-"typescript@^3.2.1 || ^4", "typescript@>= 2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
+"typescript@^3.2.1 || ^4", "typescript@>= 2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@>=4.3.5":
   "integrity" "sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A=="
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.7.2.tgz"
   "version" "4.7.2"
