@@ -1,0 +1,17 @@
+.toggle{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle>*{
+    color: var(--crimson);
+}
+
+.t-button{
+    border-radius: 100%;
+    background: var(--crimson);
+    position: absolute;
+}

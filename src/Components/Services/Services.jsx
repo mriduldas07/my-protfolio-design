@@ -4,11 +4,13 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from '../Card/Card';
-import resume from '../Services/resume.pdf'
+import resume from '../Services/resume.pdf';
+import {motion} from 'framer-motion'
 
 const Services = () => {
+    const transition = {duration: 1.5, type: 'spring'} 
     return (
-        <div className='services'>
+        <div className='services' id='Services'>
             {/* left side */}
             <div className="awesome">
                 <span>My awesome</span>
@@ -22,29 +24,41 @@ const Services = () => {
             {/* right side */}
             <div className="cards">
                 {/* 1st card */}
-                <div style={{left:'14rem'}}>
+                <motion.div
+                initial={{left: "50%"}}
+                whileInView={{left: '60%'}}
+                transition={transition}
+                style={{left:'14rem'}}>
                     <Card
                         emoji = {HeartEmoji}
                         heading = {"Design"}
-                        detail = {"Figma, Sketch"}
+                        detail = {"Figma, Sketch, Photoshop, Adobe, Adobe xd"}
                     ></Card>
-                </div>
+                </motion.div>
                 {/* 2nd card */}
-                <div style={{top: '12rem', left: '-4rem'}}>
+                <motion.div
+                initial={{ left: "-30%", top: "35%" }}
+                whileInView={{ left: "-3%" }}
+                transition={transition}
+                style={{top: '12rem', left: '-4rem'}}>
                     <Card
                     emoji={Glasses}
                     heading={'Developer'}
-                    detail={'Html, Css, Javascript,React'}
+                    detail={'Html, Css, Javascript,React,Node, Express, Next, React Native'}
                     ></Card>
-                </div>
-                <div style={{top: '19rem', left: '12rem'}}>
+                </motion.div>
+                <motion.div
+                initial={{ top: "55%", left: "80%" }}
+                whileInView={{ left: "60%" }}
+                transition={transition}
+                style={{top: '19rem', left: '12rem'}}>
                     <Card
                     emoji={Humble}
                     heading={'UI/UX'}
                     detail={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, voluptatum consectetur'}
                     ></Card>
                     <div className='blur s-blur2' style={{background: 'var(--purple)'}}></div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

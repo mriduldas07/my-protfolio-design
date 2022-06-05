@@ -10,8 +10,11 @@ import thumbup from '../../img/thumbup.png';
 import crown from '../../img/crown.png'
 import glassesimoji from '../../img/glassesimoji.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
+import {motion} from 'framer-motion'
 
 const Intro = () => {
+
+    const transition = { duration : 2, type: 'spring'}
     return (
         <div className='intro'>
             <div className="i-left">
@@ -31,20 +34,36 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={boy} alt="" />
-                <img src={glassesimoji} alt="" />
-                <div style={{top: '-4%', left: '68%'}}>
+                <motion.img
+                initial={{left: '-36%'}}
+                whileInView={{left: '-24%'}}
+                transition={transition}
+                src={glassesimoji} alt="" />
+                <motion.div
+                initial={{top: '-4%', left: '74%'}}
+                whileInView={{left: '68%'}}
+                transition={transition}
+                style={{top: '-4%', left: '68%'}}
+                className='floating-div'
+                >
                     <FloatingDiv
                     img={crown}
                     ></FloatingDiv>
-                </div>
-                <div style={{top: '18rem', left: '0rem'}}>
+                </motion.div>
+                <motion.div
+                initial={{left: '30%', top: '75%'}}
+                whileInView={{left: "0%"}}
+                transition={transition}
+                style={{top: '18rem', left: '0rem'}}
+                className='floating-div'
+                >
                     <FloatingDiv
                     img={thumbup}
                     ></FloatingDiv>
-                </div>
+                </motion.div>
                     {/* blur div es */}
                     <div className="blur" style={{background: 'rgb(238 210 255)'}}></div>
-                    <div className='blur' style={{
+                    <div className='blur ' style={{
                         background: '#C1F5FF',
                         top: '17rem',
                         width: '21rem',

@@ -47,3 +47,11 @@
 .achievement span:nth-of-type(2){
     color: var(--crimson);
 }
+
+@media screen and (max-width: 470px) {
+    .experience{
+        padding: 4rem;
+        gap: 1rem;
+        height: 25vh;
+    }
+}

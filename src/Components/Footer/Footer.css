@@ -22,3 +22,15 @@
     display: flex;
     gap: 2rem;
 }
+
+@media screen and (max-width: 470px) {
+    .footer{
+        height: 100%;
+    }
+    .f-content span{
+        margin-top: 3rem;
+    }
+    .f-icon{
+        margin-bottom: 20%;
+    }
+}

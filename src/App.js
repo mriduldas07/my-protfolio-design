@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Navbar from "./Components/Navbar/Navbar";
 import './App.css'
 import Intro from "./Components/Intro/Intro";
@@ -10,10 +11,15 @@ import Contact from "./Components/Contact/Contact";
 import { ToastContainer } from "react-toastify";
 import Footer from "./Components/Footer/Footer";
 
+
 function App() {
+  const [toggle, setToggle] = useState(true);
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Navbar
+        toggle={toggle}
+        setToggle={setToggle}
+      ></Navbar>
       <Intro></Intro>
       <Services></Services>
       <Experience></Experience>

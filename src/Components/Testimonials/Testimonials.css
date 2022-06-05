@@ -71,3 +71,18 @@
 .t-wrapper .swiper-pagination-bullet-active{
     background: var(--crimson);
 }
+
+@media screen and (max-width: 480px) {
+    .t-heading{
+        display: flex;
+        flex-direction: column;
+    }
+    .t-wrapper{
+        padding: 0;
+        gap: 0.5rem;
+    }
+    .testimonial img{
+        width: 70px;
+        height: 70px;
+    }
+}

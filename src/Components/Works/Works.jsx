@@ -4,7 +4,10 @@ import Upwork from '../../img/Upwork.png';
 import Fiverr from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import Shopify from '../../img/Shopify.png';
-import facebook from '../../img/Facebook.png'
+import facebook from '../../img/Facebook.png';
+import {motion} from 'framer-motion';
+import {Link} from 'react-scroll';
+
 
 const Works = () => {
     return (
@@ -20,7 +23,12 @@ const Works = () => {
             </div>
             {/* right side */}
             <div className="w-right">
-                <div className="w-mainCircle">
+                <motion.div
+                initial={{ rotate: 45 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}
+                className="w-mainCircle">
                     <div className="w-secCircle">
                         <img src={Upwork} alt="" />
                     </div>
@@ -36,7 +44,7 @@ const Works = () => {
                     <div className="w-secCircle">
                         <img src={facebook} alt="" />
                     </div>
-                </div>
+                </motion.div>
                 <div className="w-bgCircle blueCircle"></div>
                 <div className="w-bgCircle yellowCircle"></div>
             </div>

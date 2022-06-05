@@ -53,3 +53,24 @@
 .cards >*{
     position: absolute;
 }
+
+@media screen and (max-width: 480px) {
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 64rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .cards *{
+        position: static;
+    }
+    .s-blur2{
+        filter: blur(200px);
+    }
+}
